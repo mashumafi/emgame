@@ -1,0 +1,15 @@
+name: Emscripten Build
+on: [push]
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: make build
+    - name: Archive Exports
+      uses: actions/upload-artifact@v2
+      with:
+        name: build
+        path: |
+          dist/*
+      

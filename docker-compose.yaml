@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  emsdk:
+    image: emscripten/emsdk
+    volumes:
+      - .:/src
+  nginx:
+    image: nginx
+    volumes:
+      - ./dist:/usr/share/nginx/html
+    ports:
+      - 8080:80
