@@ -1,6 +1,7 @@
-add_executable(game helloworld.cpp)
+add_executable(index helloworld.cpp)
+target_link_libraries(index PRIVATE glm)
 
-install(TARGETS game DESTINATION .)
-install(FILES "${CMAKE_CURRENT_BINARY_DIR}/game.js" DESTINATION .)
-install(FILES "${CMAKE_CURRENT_BINARY_DIR}/game.wasm" DESTINATION .)
+install(TARGETS index DESTINATION .)
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/index.js" DESTINATION .)
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/index.wasm" DESTINATION .)
 
