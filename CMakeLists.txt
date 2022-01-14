@@ -8,7 +8,7 @@ endif()
 set(CMAKE_CXX_FLAGS "-Wall -Wextra")
 set(CMAKE_CXX_FLAGS_DEBUG "-g")
 set(CMAKE_CXX_FLAGS_RELEASE "-Os")
-set(CMAKE_EXECUTABLE_SUFFIX ".html")
+set(CMAKE_EXECUTABLE_SUFFIX ".js")
 
 add_subdirectory(thirdparty)
 add_subdirectory(src)
